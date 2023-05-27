@@ -1,11 +1,18 @@
 import Image from 'next/image'
+import AboutPage from './sections.js'
 
 export default function Home() {
   return (
-    <section>
+    <main>
+    <div>
       <h1>
         Welcome to my website!
       </h1>
-    </section>
+    </div>
+
+    <div>
+      <AboutPage />
+    </div>
+    </main>
   )
 }
