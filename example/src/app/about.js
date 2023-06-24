@@ -20,6 +20,9 @@ export default function About() {
         I love trying out new things. I've explored the Cornell 
         Rowing Club, Origami Club, some naturalist clubs and I'm looking to 
         exploring more!
+        <br />
+        I created this website to document my interests outside of school. Feel free
+        to reach out at yb265@cornell.edu.
         </p>
         </>
     )
