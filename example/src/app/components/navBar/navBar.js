@@ -1,13 +1,11 @@
-'use client'
-
 //import {useRouter} from 'next/navigation'
-import {NavLink, Link} from 'react'
-import * as icons from '../icons/icons.js'
+import Link from 'next/link'
+import {Logo1} from '../icons/icons.js'
 
-export function NavBar() {
+export default function NavBar() {
     return (
         <nav className="navBar">
-            <icons.Logo1 />
+            <Logo1 />
             <ul>
                 <li>
                     <Link href="/">About</Link>

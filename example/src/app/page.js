@@ -1,5 +1,5 @@
-import {About} from "./about"
-import {NavBar} from "./components/navBar/navBar.js"
+import About from "./about"
+import NavBar from "./components/navBar/navBar.js"
 
 import Link from 'next/link';
 
