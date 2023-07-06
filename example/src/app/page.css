@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+intro {
+    display: flex;
+    padding-top: 15%;
+    padding-left: 150px;
+    padding-right: 30px;
+
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+
+} 
+
+.greeting {
+    padding-top: 7%;
+    font-size: 70px;
+    /* background-color: aqua; */
+    font-family: 'Grape Nuts', cursive;
+    text-align: center;
+
+    width: 330px;
+    height: 172px;
+}
+
+.profession {
+    font-size: 128px;
+    /* background-color: aqua; */
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: right;
+
+    width: 651px;
+    height: 340px;
+    
+}
+
+.ampersand {
+    font-family: 'Grape Nuts', cursive;
+} 

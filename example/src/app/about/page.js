@@ -1,6 +1,21 @@
 export default function About() {
     return(
-        <>
+        <div>
+        <section className="intro">
+
+        </section>
+        <section className="countries">
+            
+        </section>
+        <section className="description">
+            
+        </section>
+        </div>
+    )
+}
+
+function draft() {
+    <>
         <p>
         Hello! My name is Anjelica. 
         <br />
@@ -25,5 +40,4 @@ export default function About() {
         to reach out at yb265@cornell.edu.
         </p>
         </>
-    )
 }

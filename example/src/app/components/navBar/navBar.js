@@ -10,16 +10,16 @@ export default function NavBar() {
             <Logo1 />
             <ul>
                 <li>
-                    <Link href="/">ABOUT</Link>
+                    <Link href="/about" className='Header'>ABOUT</Link>
                 </li>
                 <li>
-                    <Link href="/artworks">ARTWORKS</Link>
+                    <Link href="/artworks" className='Header'>ARTWORKS</Link>
                 </li>
                 <li>
-                    <Link href="/projects">PROJECTS</Link>
+                    <Link href="/projects" className='Header'>PROJECTS</Link>
                 </li>
                 <li>
-                    <Link href="/photos">PHOTOS</Link>
+                    <Link href="/photos" className='Header'>PHOTOS</Link>
                 </li>
             </ul>
         </nav>
