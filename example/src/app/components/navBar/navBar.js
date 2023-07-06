@@ -2,22 +2,24 @@
 import Link from 'next/link'
 import {Logo1} from '../icons/icons.js'
 
+import styles from './navBar.css'
+
 export default function NavBar() {
     return (
-        <nav className="navBar">
+        <nav>
             <Logo1 />
             <ul>
                 <li>
-                    <Link href="/">About</Link>
+                    <Link href="/">ABOUT</Link>
                 </li>
                 <li>
-                    <Link href="/artworks">Artworks</Link>
+                    <Link href="/artworks">ARTWORKS</Link>
                 </li>
                 <li>
-                    <Link href="/projects">Projects</Link>
+                    <Link href="/projects">PROJECTS</Link>
                 </li>
                 <li>
-                    <Link href="/photos">Photos</Link>
+                    <Link href="/photos">PHOTOS</Link>
                 </li>
             </ul>
         </nav>
