@@ -1,16 +1,11 @@
 import styles from "./page.css" 
 
-import About from "./about/page"
-import NavBar from "./components/navBar/navBar.js"
-
-import Link from 'next/link';
-
-<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet"></link>
+import {NavBar1} from "./components/navBar/navBar.js"
 
 export default function Page() {
     return(
         <div>
-          <NavBar />
+          <NavBar1 />
           <intro>
             <div className="greeting">Hello!
               <br/>

@@ -1,8 +1,13 @@
+import {NavBar2} from "../components/navBar/navBar.js"
+
+import styles from './page.css'
+
 export default function About() {
     return(
         <div>
+        <NavBar2 />
         <section className="intro">
-
+            
         </section>
         <section className="countries">
             
@@ -13,6 +18,8 @@ export default function About() {
         </div>
     )
 }
+
+
 
 function draft() {
     <>
