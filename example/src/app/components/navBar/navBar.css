@@ -8,7 +8,8 @@
 
 li {
   display: inline;
-  left: 196px;
+  left: 130px;
+  font-size: 16px;
   /* gap: 50%; */
 }
 
@@ -27,7 +28,7 @@ nav1 {
     padding-left: 70px;
 }
 
-nav1 ul {
+.navItems {
     display: flex;
     left: 130px;
     list-style-type: none;
@@ -80,14 +81,14 @@ nav2 nav2inner {
   align-items: center;
 }
 
-nav2 nav2inner ul {
+/* nav2 nav2inner ul {
   display: flex;
   left: 130px;
   list-style-type: none;
   align-items: center;
   padding-left: 70px;
   gap: 50%;
-}
+} */
 
 .header2{
   color: #FFF;

@@ -1,0 +1,1 @@
+export const profileURL = 'pictures/About/Profile.png'

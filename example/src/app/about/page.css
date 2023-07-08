@@ -1,9 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* @font-face {
+    font-family: 'Grape Nuts';
+    src: url(/public/fonts/Grape_Nuts/GrapeNuts-Regular.ttf) format('truetype');
+    font-display: swap;
+  }  
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(/public/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
+    font-display: swap;
+}   */
+
 * {
-    margin: 0;
+    margin: 0px;
 }
 
-div {
+text {
+    /* left: 196px; */
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    font-size: 34px;
+    top: 37%;
+    left: 190px; /* size of margins */
+    font-family: 'Grape Nuts', cursive;
+}
+
+.profession {
+    position: absolute;
+    display: flex;
+    font-size: 30px;
+    top: 50%;
+    left: 190px; /* size of margins */
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.links {
+    position: absolute;
+    display: flex;
+    font-size: 20px;
+    top: 63%;
+    left: 190px; /* size of margins */
+    font-family: 'Roboto Mono', sans-serif;
+
+    gap: 107px;
+}
+
+.link{
+    color: #000;
+    font-family: 'Roboto Mono', sans-serif;
+    text-decoration: none;
+  }
+
+.link:hover{
+    color: #000;
+    text-shadow: 3px 3px 10px #ababab;
+    text-decoration: none;
+  }
+  
+.link:active{
+    color: #000;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.profile {
+    position: absolute;
+    width: 300px;
+    display: flex;
+    right: 190px; /* size of margins */
+    top: 30%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #777676;
+}
+
+/*********************************** countries ***********************************/
+
+.countries {
+    background-color: #D9D9D9;
+    position: absolute;
+    display: flex;
+    left: 0px;
+    margin-inline-start: 0px;
+
+    width: 100%;
+    height: 200px;
+    /* padding-left: 0px; */
+    /* padding-right: 200px;  */
+    top: 100%;
+    align-items: center;
+}
+
+.flags {
+    position: absolute;
+    top: 63px;
+    display: flex;
+    list-style-type: none;
+
+    left: 190px;
+    right: 190px;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+
+.flag {
     left: 0;
-    top: 0;
+    width: 74px;
 }
-

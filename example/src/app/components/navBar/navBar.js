@@ -8,7 +8,7 @@ export function NavBar1() {
     return (
         <nav1>
             <Logo1 />
-            <ul>
+            <ul className='navItems'>
                 <li>
                     <Link href="/about" className='header1'>ABOUT</Link>
                 </li>
@@ -31,7 +31,7 @@ export function NavBar2() {
         <nav2>
             <nav2inner className= "sticky">
             <Logo2 />
-            <ul>
+            <ul className='navItems'>
                 <li>
                     <Link href="/about" className='header2'>ABOUT</Link>
                 </li>
