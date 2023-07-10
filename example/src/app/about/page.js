@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import {NavBar2} from "../components/navBar/navBar.js"
+import {Footer} from "../components/footer/footer.js"
 import * as icons from '/public/icons/icons.js'
 import * as about from '/public/pictures/About/pictures.js'
 // import Pdf from "./Anjelica's_Resume.pdf"
@@ -10,43 +11,34 @@ import styles from './page.css'
 
 export default function About() {
     return(
-        <div>
-        <NavBar2 />
-        <section className="intro">
-            <Intro/>
-        </section>
-        <section className="countries">
+        <div className='content'>
+            <NavBar2/>
+            <Intro />
             <Countries />
-        </section>
-        <section className="description">
-            
-        </section>
+            <Draft />
         </div>
     )
 }
 
 function Intro() {
     return (
-        <div>
-        <text>
-            <p className="name">Anjelica Bian</p>
-            <p className="profession">Engineer - Artist - Cornell Sophomore</p>
-            <p className="links">
+        <div className='Intro'> 
+            <p className="name_about">Anjelica Bian</p>
+            <p className="profession_about">Engineer - Artist - Cornell Sophomore</p>
+            <p className="links_about">
                 <Link href="" className='link'>RESUME</Link>
                 <Link href="https://github.com/AnjelicaB" className='link'>GITHUB</Link>
                 <Link href= "mailto:yb265@cornell.edu" className='link'>EMAIL</Link>
             </p>
-        </text>
-        <picture>
-            <img className="profile" src={about.profileURL} alt="Profile"/>
-        </picture>
+        
+            <img className="profile_about" src={about.profileURL} alt="Profile"/>
         </div>
     )
 }
 
 function Countries() {
     return (
-        <div>
+        <div className='countries'>
         <ul className="flags">
             <li>
                 <img className="flag" src={icons.ChineseFlag} alt="Chinese Flag"/>
@@ -65,30 +57,39 @@ function Countries() {
     )
 }
 
-function draft() {
-    <>
-        <p>
-        Hello! My name is Anjelica. 
-        <br />
-        <br />
-        I am a rising sophomore at Cornell University, and I plan on studying 
-        Electrical and Computer Engineering with a minor in Computer Science and
-        either maths or data science. 
-        <br />
-        <br />
-        I am in our school's robotics lab called the EmPRISE Robotics Lab, and 
-        I am in a professional business fraternity called Phi Chi Theta. That said, 
-        my professional interests lie at the intersection between technology and 
-        business. Beyond software engineering, I am also interested in consulting.
-        <br />
-        <br />
-        Outside of my academic and professional careers, I am an avid artist and 
-        I love trying out new things. I've explored the Cornell 
-        Rowing Club, Origami Club, some naturalist clubs and I'm looking to 
-        exploring more!
-        <br />
-        I created this website to document my interests outside of school. Feel free
-        to reach out at yb265@cornell.edu.
-        </p>
-        </>
+function Draft() {
+    return(
+    <div className='Draft'>
+        <section>
+            <p className='title'>ACADEMICS</p>
+            {/* <p className='Body'>
+            I am a rising sophomore at Cornell University, and I plan on studying 
+            Electrical and Computer Engineering with a minor in Computer Science and
+            either maths or data science.
+            </p> */}
+        </section>
+        <section>
+            <p className='title'>
+                CURRENTLY
+            </p>
+            {/* <p className='Body'>
+            I am in our school's robotics lab called the EmPRISE Robotics Lab, and 
+            I am in a professional business fraternity called Phi Chi Theta. That said, 
+            my professional interests lie at the intersection between technology and 
+            business. Beyond software engineering, I am also interested in consulting.
+            </p> */}
+        </section>
+        <section>
+            <p className='title'>
+                HOBBIES
+            </p>
+            {/* <p className='Body'>
+            Outside of my academic and professional careers, I am an avid artist and 
+            I love trying out new things. I've explored the Cornell 
+            Rowing Club, Origami Club, some naturalist clubs and I'm looking to 
+            exploring more!
+            </p> */}
+        </section>
+    </div>
+    )
 }

@@ -41,3 +41,35 @@ export function Logo2() {
 }
 
 ///////////////////////////////////////  Footer ///////////////////////////////////////
+
+export function Sign1() {
+    return (
+        <Link href="/">
+            <img className='Signiture' src={icons.Sign3} alt="Signiture"/>
+        </Link>
+    )
+}
+
+export function Email() {
+    return (
+        <Link href= "mailto:yb265@cornell.edu" className="social_media">
+            <img className="Social_medium" src={icons.Gmail} alt="Email"/>
+        </Link>
+    )
+}
+
+export function Github() {
+    return (
+        <Link href="https://github.com/AnjelicaB" className="social_media">
+            <img className="Social_medium" src={icons.Github} alt="Email"/>
+        </Link>
+    )
+}
+
+export function Insta() {
+    return (
+        <Link href="https://instagram.com/artisanjelica?igshid=MmIzYWVlNDQ5Yg==" className="social_media">
+            <img className="Social_medium" src={icons.Insta} alt="Instagram"/>
+        </Link>
+    )
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+foot {
+    display: flex;
+    width: 100%;
+    height: 225px;
+    background-color: #0073C7;
+    align-items: center;
+    margin: 0px;
+}
+
+.Sign {
+    position: absolute;
+    display: flex;
+    /* background-color: aliceblue; */
+    padding-left: 0px;
+    left: 50px
+}
+
+.Social_media {
+    position: absolute;
+    display: flex;
+    /* background-color: aliceblue; */
+    right: 190px;
+    padding: 0px;
+    margin: 0px;
+    gap: 25px;
+}

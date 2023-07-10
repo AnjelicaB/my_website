@@ -15,6 +15,10 @@ li {
 
 /************************************* NavBar1 *************************************/
 
+.content {
+  position: relative;
+}
+
 nav1 {
     position: fixed;
     left: 0;
@@ -67,6 +71,7 @@ nav2 {
   
   display: flex;
   align-items:center;
+  z-index: 0;
 }
 
 nav2 nav2inner {
@@ -106,4 +111,8 @@ nav2 nav2inner {
   color: #FFF;
   text-shadow: none;
   text-decoration: none;
+}
+
+.foot {
+  position: absolute;
 }

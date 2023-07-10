@@ -7,15 +7,16 @@ export default function Page() {
         <div>
           <NavBar1 />
           <intro>
-            <div className="greeting">Hello!
+            <p className="greeting">
+              Hello!
               <br/>
               I'm Anjelica
-            </div>
-            <div className='profession'>
+            </p>
+            <p className='profession_home'>
               ENGINEER
               <br/>
               <span className="ampersand">&</span> ARTIST
-            </div>
+            </p>
           </intro>
         </div>
     )
