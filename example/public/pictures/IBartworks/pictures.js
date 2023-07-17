@@ -50,8 +50,10 @@ export const exhibition = {
         first artwork, as the viewer looks from left to right, big to small.    
         </p>,
     imageURL: '/pictures/IBartworks/exhibition.JPEG',
-    width: 3648,
-    height: 2736
+    width: 550,
+    height: 396
+    // width: '3648px',
+    // height: '2736px'
 }
 
 export const inspired = {
