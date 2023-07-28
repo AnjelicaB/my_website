@@ -1,7 +1,41 @@
 import {exhibition, inspired, selfDirected, selfPortrait, box, lastPiece, collage1, collage2} from "/public/pictures/IBArtworks/pictures.js"
 import Image from "next/image"
 
-export default function IBArtworks() {
+function IB() {
+    <div ></div>
+}
+
+function Title() {
+    return (
+    <div className="title-box">
+
+    </div>
+    )
+}
+
+function Overview() {
+    return (
+    <div className="overview">
+
+    </div>
+    )
+}
+
+function ArtworksCollection() {
+    return (
+    <div className="artworks-collection">
+    </div>
+    )
+}
+
+function artwork() {
+    return (
+        <div className="artwork">
+        </div>
+    )
+}
+
+function IBArtworks() {
     return(
     <div>
         <section>

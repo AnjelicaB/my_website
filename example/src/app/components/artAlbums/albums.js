@@ -1,85 +1,26 @@
-"use client"
+import * as IB from "/public/pictures/IBArtworks/pictures.js"
+import * as travel from "/public/pictures/Travel_Artworks/pictures.js"
+import * as icons from "/public/icons/icons.js"
+import style1 from '/src/app/about/page.css'
+import styles2 from "./albums.css"
+import Link from 'next/link'
 
-import { motion, AnimatePresence } from "framer-motion" 
-import { useState, useEffect, createContext } from 'react';
-
-export function AlbumSection() {
-    return (
+export function Albums() {
+    return(
+    <div className="albums-box">
     <div className="albums">
-        <div className="mainBlock">
-            <p className='title'>ALBUMS</p>
-            <Albums>
-                <img
-                src={exhibition.imageURL}
-                alt={exhibition.name}
-                width={exhibition.width}
-                height={exhibition.height}
-                // layout="responsive"
-                />
-            </Albums>
+        <p className="title">ALBUMS</p>
+        <div className="albums-innerbox">
+            <Link href="/artwork">
+                <img className="cover" src={IB.exhibition.imageURL} alt="IB Art exhibition"></img>
+            </Link>
+            <img className="cover" src={travel.Evening_in_Suzhou.imageURL}></img>
+        </div>
+        <div className="navigation">
+            <img className="arrow" src={icons.Left}></img>
+            <img className="arrow" src={icons.Right}></img>
         </div>
     </div>
-    )
-}
-
-function Albums( { children } ) {
-    const [album, setAlbum] = useState(0) // Depends on how many albums there are
-    return (
-    <div>
-        <motion.div 
-            className="albumView"
-            variants={sideScroll}>
-            { children }
-        </ motion.div>
-        <button 
-            className="button-left"
-            onClick={() => setCount(min(2, max(album-1, 0)))}>
-            <img 
-                className="button" 
-                src={icons.Left} 
-                alt="Left"/>
-        </button>
-        <button 
-            className="button-right" 
-            onClick={() => setCount(min(2, max(album+1, 0)))}>
-            <img 
-                className="button" 
-                src={icons.Right} 
-                alt="Right"/>
-        </button>
     </div>
     )
-}
-
-const sideScroll = {
-    left: {
-        left: "100px",
-        top: "60px",
-        transition: {
-            duration: 0.4,
-            type: "spring",
-            damping: 100,
-            stiffness: 500
-        }
-    },
-    right: {
-        right: "100px",
-        top: "60px",
-        transition: {
-            duration: 0.4,
-            type: "spring",
-            damping: 100,
-            stiffness: 500
-        }
-    },
-    center: {
-        left: "100%",
-        top: "60px",
-        transition: {
-            duration: 0.4,
-            type: "spring",
-            damping: 100,
-            stiffness: 500
-        }
-    },
 }

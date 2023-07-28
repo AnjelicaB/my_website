@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import Link from 'next/link'
 import {NavBar2} from "../components/navBar/navBar.js"
@@ -27,13 +27,31 @@ function Intro() {
             <p className="name_about">Anjelica Bian</p>
             <p className="profession_about">Engineer - Artist - Cornell Sophomore</p>
             <p className="links_about">
-                <Link href="" className='link'>RESUME</Link>
-                <Link href="https://github.com/AnjelicaB" className='link'>GITHUB</Link>
-                <Link href= "mailto:yb265@cornell.edu" className='link'>EMAIL</Link>
+                <Resume />
+                <Github />
+                <Email />
             </p>
         
             <img className="profile_about" src={about.profileURL} alt="Profile"/>
         </div>
+    )
+}
+
+function Resume() {
+    return (
+        <Link href="" className='link'>RESUME</Link>
+    )
+}
+
+function Github() {
+    return (
+        <Link href="https://github.com/AnjelicaB" className='link'>GITHUB</Link>
+    )
+}
+
+function Email() {
+    return (
+        <Link href= "mailto:yb265@cornell.edu" className='link'>EMAIL</Link>
     )
 }
 

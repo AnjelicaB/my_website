@@ -48,7 +48,7 @@ nav1 {
 
 .header1:hover{
   color: #000;
-  text-shadow: 3px 3px 10px #ababab;
+  text-shadow: 3px 3px 10px #00000080;
   text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ nav2 nav2inner {
 
 .header2:hover{
   color: #FFF;
-  text-shadow: 3px 3px 10px #000000;
+  text-shadow: 3px 3px 10px #00000080;
   text-decoration: none;
 }
 

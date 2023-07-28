@@ -7,6 +7,11 @@ button {
     height: 50px;
     width: 50px;
     border-style: none;
+    border-radius: 50%;
+}
+
+.Logo:hover {
+    box-shadow: 3px 3px 10px #00000080;
 }
 
 .Signiture {
@@ -17,4 +22,9 @@ button {
 
 .Social_medium {
     width: 40px;
+    border-radius: 50%;
+}
+
+.Social_medium:hover {
+    box-shadow: 3px 3px 10px #00000080;
 }
